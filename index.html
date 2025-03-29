@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to TravelBook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="brand">
+            <img src="images/logo.png" alt="Brand Logo" class="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Book</a></li>
+            <li class="dropdown">
+                <a href="#">Packages</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">United States</a></li>
+                    <li><a href="#">India</a></li>
+                    <li><a href="#">France</a></li>
+                    <li><a href="#">Germany</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="login.html"><button class="login">Login</button></a>
+            <a href="register.html"><button class="register">Register</button></a>
+        </div>
+    </nav>
+
+    <!-- Background Section -->
+    <header>
+        <div class="overlay">
+            <h1>Welcome to TravelBook</h1>
+            <h2 id="changing-text">Visit United States</h2>
+            <button class="book-now">Book Now</button>
+        </div>
+    </header>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="booking-left">
+            <img src="images/background.jpg" alt="Travel Brand">
+        </div>
+        <div class="booking-right">
+            <h2>Book Your Trip</h2>
+            <form id="booking-form">
+                <label for="destination">Where to:</label>
+                <select id="destination" required>
+                    <option value="">Select a Destination</option>
+                    <option>Paris</option>
+                    <option>New York</option>
+                    <option>Dubai</option>
+                    <option>Tokyo</option>
+                    <option>London</option>
+                </select>
+
+                <label for="persons">How Many Persons:</label>
+                <input type="number" id="persons" min="1" required>
+
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" required>
+
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" minlength="50" maxlength="500" required></textarea>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Package Gallery -->
+<!-- Package Gallery Section -->
+<section class="package-gallery">
+    <h2>Popular Packages</h2>
+    <div class="package-grid">
+        <!-- Row 1 -->
+        <div class="package-card">
+            <img src="images/eiffel_tower.jpg" alt="Paris">
+            <h3>Paris</h3>
+            <p>Explore the Eiffel Tower, museums, and cafes.</p>
+            <span class="price">$1200</span>
+            <span class="rating">⭐⭐⭐⭐☆</span>
+            <button class="book-now-btn">Book Now</button>
+        </div>
+        <div class="package-card">
+            <img src="images/central_park.jpg" alt="New York">
+            <h3>New York</h3>
+            <p>Visit Times Square, Central Park, and Broadway.</p>
+            <span class="price">$1500</span>
+            <span class="rating">⭐⭐⭐⭐⭐</span>
+            <button class="book-now-btn">Book Now</button>
+        </div>
+        <div class="package-card">
+            <img src="images/dubai.jpg" alt="Dubai">
+            <h3>Dubai</h3>
+            <p>Experience Burj Khalifa, desert safari, and luxury shopping.</p>
+            <span class="price">$1300</span>
+            <span class="rating">⭐⭐⭐⭐☆</span>
+            <button class="book-now-btn">Book Now</button>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="package-card">
+            <img src="images/london.jpg" alt="London">
+            <h3>London</h3>
+            <p>See Buckingham Palace, London Eye, and Big Ben.</p>
+            <span class="price">$1400</span>
+            <span class="rating">⭐⭐⭐⭐⭐</span>
+            <button class="book-now-btn">Book Now</button>
+        </div>
+        <div class="package-card">
+            <img src="images/tokyo.jpg" alt="Tokyo">
+            <h3>Tokyo</h3>
+            <p>Explore Shibuya, temples, and sushi delights.</p>
+            <span class="price">$1600</span>
+            <span class="rating">⭐⭐⭐⭐☆</span>
+            <button class="book-now-btn">Book Now</button>
+        </div>
+        <div class="package-card">
+            <img src="images/sydney.jpg" alt="Sydney">
+            <h3>Sydney</h3>
+            <p>Enjoy the Opera House, beaches, and wildlife.</p>
+            <span class="price">$1700</span>
+            <span class="rating">⭐⭐⭐⭐⭐</span>
+            <button class="book-now-btn">Book Now</button>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="package-card">
+            <img src="images/rome.jpg" alt="Rome">
+            <h3>Rome</h3>
+            <p>Visit the Colosseum, Vatican City, and ancient ruins.</p>
+            <span class="price">$1250</span>
+            <span class="rating">⭐⭐⭐⭐☆</span>
+            <button class="book-now-btn">Book Now</button>
+        </div>
+        <div class="package-card">
+            <img src="images/bali.jpg" alt="Bali">
+            <h3>Bali</h3>
+            <p>Relax on stunning beaches and explore temples.</p>
+            <span class="price">$1100</span>
+            <span class="rating">⭐⭐⭐⭐⭐</span>
+            <button class="book-now-btn">Book Now</button>
+        </div>
+        <div class="package-card">
+            <img src="images/cairo.jpg" alt="Cairo">
+            <h3>Cairo</h3>
+            <p>See the Pyramids, Sphinx, and Nile River.</p>
+            <span class="price">$1350</span>
+            <span class="rating">⭐⭐⭐⭐☆</span>
+            <button class="book-now-btn">Book Now</button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>✅ Affordable Hotels</li>
+            <li>✅ Food & Drinks</li>
+            <li>✅ Safety Guide</li>
+            <li>✅ Travel Insurance</li>
+            <li>✅ Airport Transfers</li>
+            <li>✅ Local Tours</li>
+        </ul>
+    </section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="images/g1.jpg" alt="Glimpse 1">
+        </div>
+        <div class="gallery-item">
+            <img src="images/g2.jpg" alt="Glimpse 2">
+        </div>
+        <div class="gallery-item">
+            <img src="images/g3.jpg" alt="Glimpse 3">
+        </div>
+        <div class="gallery-item">
+            <img src="images/g4.jpg" alt="Glimpse 4">
+        </div>
+    </div>
+</section>
+
+
+    <!-- About Us Section -->
+<!-- About Us Section -->
+<section class="about-us">
+    <div class="about-image">
+        <img src="images/logo.png" alt="Travel Guide Image" style="width: 100%; border-radius: 8px;">
+    </div>
+    <div class="about-content">
+        <h2>About Us</h2>
+        <p>Welcome to TravelBook, your trusted travel companion dedicated to making your journeys memorable and hassle-free. Since our establishment, we have been guiding explorers to the most stunning and unique destinations worldwide.</p>
+        <p>From breathtaking landscapes to vibrant cityscapes, our expertise spans across curating personalized travel experiences that cater to your interests and desires.</p>
+        <p>Join us at TravelBook, where every journey becomes a story worth sharing.</p>
+    </div>
+</section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Travel Website. All Rights Reserved.</p>
+        <div class="social-icons">
+            <img src="images/instagram.jpg" alt="Instagram">
+            <img src="images/facebook.jpg" alt="Facebook">
+            <img src="images/twitter.jpg" alt="Twitter">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
