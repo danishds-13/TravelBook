@@ -15,19 +15,19 @@
         </div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Book</a></li>
+            <li><a href="#booking">Book</a></li>
             <li class="dropdown">
                 <a href="#">Packages</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">United States</a></li>
-                    <li><a href="#">India</a></li>
-                    <li><a href="#">France</a></li>
-                    <li><a href="#">Germany</a></li>
+                    <li><a href="#packages">United States</a></li>
+                    <li><a href="#packages">India</a></li>
+                    <li><a href="#packages">France</a></li>
+                    <li><a href="#packages">Germany</a></li>
                 </ul>
             </li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
         </ul>
         <div class="auth-buttons">
             <a href="login.html"><button class="login">Login</button></a>
@@ -37,7 +37,7 @@
 
     <!-- Background Section -->
     <header>
-        <div class="overlay">
+        <div class="overlay" id="#">
             <h1>Welcome to TravelBook</h1>
             <h2 id="changing-text">Visit United States</h2>
             <button class="book-now">Book Now</button>
@@ -49,7 +49,7 @@
         <div class="booking-left">
             <img src="images/background.jpg" alt="Travel Brand">
         </div>
-        <div class="booking-right">
+        <div class="booking-right" id="booking">
             <h2>Book Your Trip</h2>
             <form id="booking-form">
                 <label for="destination">Where to:</label>
@@ -81,7 +81,7 @@
 
     <!-- Package Gallery -->
 <!-- Package Gallery Section -->
-<section class="package-gallery">
+<section class="package-gallery" id="packages">
     <h2>Popular Packages</h2>
     <div class="package-grid">
         <!-- Row 1 -->
@@ -166,7 +166,7 @@
 
 
     <!-- Services Section -->
-    <section class="services">
+    <section class="services" id="services">
         <h2>Our Services</h2>
         <ul>
             <li>✅ Affordable Hotels</li>
@@ -200,7 +200,7 @@
 
     <!-- About Us Section -->
 <!-- About Us Section -->
-<section class="about-us">
+<section class="about-us" id="about">
     <div class="about-image">
         <img src="images/logo.png" alt="Travel Guide Image" style="width: 100%; border-radius: 8px;">
     </div>
